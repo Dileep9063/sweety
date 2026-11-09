@@ -1,0 +1,18 @@
+# Starts PostgreSQL only (the "sweety" and "sweety_test" databases).
+# Run the API and client normally with npm (see README).
+services:
+  db:
+    image: postgres:16
+    container_name: sweety-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sweety
+    ports:
+      - "5432:5432"
+    volumes:
+      - sweety-data:/var/lib/postgresql/data
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  sweety-data:

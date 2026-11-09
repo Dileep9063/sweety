@@ -74,7 +74,26 @@ All `/readings` and `/reports` routes need `Authorization: Bearer <token>`.
 Slot keys: `morning`, `after_breakfast`, `after_lunch`, `after_dinner`.
 
 ## Screenshots
-_Add screenshots / a link to your 2–3 minute screen recording here._
+**Login** (demo account: `demo@sweety.com` / `password123`)
+
+![Login](screenshots/login.png)
+
+**Readings: add, view, edit, delete**
+
+![Readings](screenshots/readings.png)
+
+**Validation error (value outside 40–600)**
+
+![Validation error](screenshots/validation-error.png)
+
+**Reports: daily, month-to-date, previous month**
+
+![Reports](screenshots/reports.png)
+![Previous month](screenshots/reports-previous-month.png)
+
+**Empty state (no readings in the period)**
+
+![Empty state](screenshots/empty-state.png)
 
 ## Notes
 
